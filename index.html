@@ -1,0 +1,59 @@
+<!--  
+   Eunjoo Na, 000811369
+   Date: 2020.12.08
+   Description: index.html is the main page for the group scheduler web application. 
+-->
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Group Scheduler</title>
+    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
+    <meta name="vieport" content="width=device-width" , initial-scale="1" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#intro").mouseenter(function () {
+          $("p").css("color", "blue");
+          $("p").css("background-color", "yellow");
+      });
+        $("#intro").mouseleave(function () {
+          $("p").css("color", "black");
+          $("p").css("background-color", "#e9ecef");
+      });
+      });
+    </script>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="index.html">Group Scheduler </a>
+      <a id="sign" class="menu" href="signin.php" class="nav-link" role="button" style="padding-right: 30px; padding-left: 30px">SIGN IN</a>
+      <a id="join" class="menu" href="join.php" class="nav-link" role="button" style="padding-right: 60px">JOIN</a>
+  </nav>
+    <!-- div for the main page -->
+    <div id="intro" class="container introduce" style="padding-top: 0px">
+      <div class="jumbotron" style="margin-top: 110px">
+        <h1  class="black">Group Scheduler</h1>
+        <br />
+        <p id="explain" class="black" style="font-size: 20px">
+          This Web Application has a log-in system. Users must register the and
+          sign in.<br />
+          After sign in, the user can write, edit, or delete the schedule.<br />
+          Also, users can see the other
+          member’s schedules, so it is very useful when the users work with a team.<br />
+          I created this Web Application with JSP, Java, MySql, JavaScript,
+          Bootstrap using eclipse.<br />
+          <br />
+          Feel free to share your schedule with your group! <br />
+          <br />
+          ***************************************<br />
+          For the testing, you can use the account below.<br />
+          ID : test<br />
+          Password : 12345<br />
+          ****************************************<br />
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

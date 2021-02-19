@@ -1,0 +1,171 @@
+/* Eunjoo Na, 000811369
+ * Date: 2020.12.08
+ * Description: styles.css for grouop scheduler web application. 
+ *              It describes the presentation of web application.
+ */
+
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+@import url(http://fonts.googleapis.com/earlyaccess/hanna.css);
+
+* {
+    font-family : 'Nanum Gothic';
+    
+}
+
+h1 {
+	font-family: 'Hanna';
+}
+
+h2{
+    margin-bottom: 20px;
+}
+h3, .h3 {
+    font-size: 1.5em;
+}
+
+.col-lg-4{
+	max-width: 100%;
+	padding: 20px;
+}
+
+
+.form-group{
+	margin: 30px 50px;
+}
+
+.container{
+	padding-top: 5%;
+}
+
+.row{
+	display: contents;
+}
+
+.table {
+	border: 1px solid #dddddd;
+    border-collapse: inherit;
+}
+
+a, a:hover{
+	color: #000000;
+	text-decoration: none;
+}
+
+.intro a{
+    background-color: #5900e7;
+    border-radius: 2px;
+    padding: 10px 30px;
+    color: white;
+    font-weight: 300;
+}
+
+.helper {
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+
+.intro {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+
+.introduce {
+	margin-top : 20px;
+}
+
+#container {
+    display: grid;
+    display: -ms-grid;
+    grid-template-columns: auto auto;
+    margin: 6%;
+    text-align: center;
+    grid-gap: 20px;
+}
+
+#reft{
+    grid-template-columns: 1;
+}
+
+#right{
+    grid-template-columns: 2;
+}
+
+
+table {
+    margin: auto;
+}
+
+table,
+td,
+th {
+    border: 1px solid silver;
+    border-collapse: collapse;
+    margin-top: 10px;
+    padding: 10px;
+}
+
+th {
+    background-color: rgb(95, 95, 95);
+    color: white;
+}
+
+body {
+    background-color: #1e3932;
+    color: aliceblue;
+
+}
+
+.black{
+    color: black;
+}
+
+#user{
+    display: none;
+}
+
+#list {
+    font-size: 17px;
+}
+
+ul{
+    margin: 20px 0;
+    list-style: none;
+}
+
+li{
+    margin: 10px 0;
+}
+
+.edit{
+    font-weight: bold;
+    padding-left: 10px;
+    padding-right: 10px;
+    
+}
+
+.menu{
+    color: rgba(0, 0, 0, 0.5);
+}
+
+@media only screen and (max-width: 768px) {
+	
+	#container {
+		grid-template-columns: auto;
+		-ms-grid-columns: auto;
+        -ms-grid-rows: auto auto;
+
+	}
+	
+	#reft {
+		-ms-grid-column: 1;
+		-ms-grid-row: 1;	
+	}	
+
+	#right {
+		-ms-grid-column: 1;
+		-ms-grid-row: 2;
+}
+
+}
