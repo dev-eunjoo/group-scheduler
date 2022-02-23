@@ -20,7 +20,7 @@
   Connect the MySQL using php code. <br />
 **2. Login system** <br />
   Stored the user's info into the data when signing up and validate it when the user tries to log in.  <br />
-**3. CRUD for scheduler** <br />
+**3. CRUD Operation for scheduler** <br />
   Manipulate the data to implement CRUD action by using sql commands. <br />
 <hr/>
 
